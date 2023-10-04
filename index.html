@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Website</title>
+    </head>
+    <style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    .food{
+        border: 1px solid tomato;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .container img{
+        width: 100%;
+    }
+    .food h3{
+        font-size: 2em;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        text-align: center;
+
+    }
+    .food-desc{
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        justify-content: center;
+        /* text-align: justify; */
+        font-size: 20px;
+    }
+    .food-price{
+        font-size: 26px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+    .btn{
+        color: var(--White-Color, #FFF);
+text-align: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 5px;
+background: #FD6E0A;
+cursor: pointer;
+padding:18px 35px;
+border: 0;
+    }
+
+    @media screen and (max-width:576px) {
+        .container{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        .btn-primary{
+            text-align: center;
+        }
+        .food-desc{
+            justify-content: center;
+            
+        }
+        .btn-primary{
+            margin: 20px;
+        }
+        
+    }
+    /* @media only screen and (min-width: 576px) {
+        .container{
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        .btn-primary{
+            text-align: center;
+        }
+    } */
+
+    @media screen and (min-width:577px) and (max-width: 992px){
+        .container{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .btn-primary{
+            text-align: center;
+        }
+        .food-desc{
+            justify-content: center;
+        }
+    }
+    /* @media only screen and (min-width: 768px) {
+        .container{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .btn-primary{
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .container{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .btn-primary{
+            text-align: center;
+        }
+    } */
+</style>
+    <body>
+
+        <!-- .container>.food*12>img[src="food/food.jpg"]+h3{Food Item - $}+p{price: \$$00}+p>lorem20 -->
+        <div class="container">
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 1</h3>
+                <p class="food-price">price: $100</p>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Exercitationem asperiores quod rem
+                    obcaecati eveniet! Tempore eligendi eum impedit consequuntur
+                    blanditiis.</p>
+                    <div class="btn-primary">
+               <a href=""><button class="btn">Buy Now</button></a> 
+            </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 2</h3>
+                <p class="food-price">price: $200</p>
+                <p class="food-desc">Culpa obcaecati, in eum iusto maxime, autem
+                    esse ullam reprehenderit odio at, voluptates consequuntur
+                    explicabo illo mollitia dolore! Ullam, obcaecati.</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 3</h3>
+                <p class="food-price">price: $300</p>
+                <p class="food-desc">Itaque explicabo possimus officiis ullam.
+                    Quas fugiat voluptatum voluptates consequatur, voluptatem
+                    quasi facilis esse illum. Cum veniam architecto illum
+                    facere!</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 4</h3>
+                <p class="food-price">price: $400</p>
+                <p class="food-desc">Enim quibusdam, dolorem perferendis dolores
+                    omnis corporis deserunt. Amet dolor doloremque ab facilis
+                    provident iste dolorum aliquid reprehenderit ad ipsum?</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div> 
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 5</h3>
+                <p class="food-price">price: $500</p>
+                <p class="food-desc">Doloremque voluptatem saepe, quaerat
+                    recusandae sapiente natus officiis officia perspiciatis
+                    quisquam, similique autem esse error, vel modi excepturi
+                    necessitatibus nulla?</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 6</h3>
+                <p class="food-price">price: $600</p>
+                <p class="food-desc">Eius sunt at autem, unde inventore corrupti
+                    dolores doloribus explicabo expedita eum! Reprehenderit,
+                    corporis officiis earum necessitatibus voluptatem quo error?</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div> 
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 7</h3>
+                <p class="food-price">price: $700</p>
+                <p class="food-desc">Suscipit libero incidunt, reiciendis eos
+                    quod tempore nesciunt pariatur explicabo, quae ullam nobis
+                    nemo sint vitae voluptas accusamus cum minus.</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 8</h3>
+                <p class="food-price">price: $800</p>
+                <p class="food-desc">Id, libero! Quasi soluta accusantium
+                    provident molestias quam itaque minima nisi, laboriosam fuga
+                    natus deleniti dolor. Ea vero minus maiores?</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 9</h3>
+                <p class="food-price">price: $900</p>
+                <p class="food-desc">Autem vel maxime unde soluta sit
+                    perferendis in reprehenderit amet dolorum placeat!
+                    Praesentium nisi porro molestias minus veritatis totam
+                    tenetur.</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 10</h3>
+                <p class="food-price">price: $1000</p>
+                <p class="food-desc">Maiores facilis dolores eaque! Odit
+                    recusandae facere optio sit ad illo magnam molestiae nihil
+                    dolore dicta, alias reiciendis amet tenetur.</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 11</h3>
+                <p class="food-price">price: $1100</p>
+                <p class="food-desc">Numquam fugit distinctio totam! Aut iste
+                    consectetur eius sequi dolorem error iusto, nisi voluptatum
+                    fugit obcaecati consequuntur, magnam totam deserunt!</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+            <div class="food">
+                <img src="food/food.jpg" alt>
+                <h3>Food Item - 12</h3>
+                <p class="food-price">price: $1200</p>
+                <p class="food-desc">Quaerat adipisci, doloribus ratione earum
+                    harum provident at fuga eius quis. Delectus voluptates
+                    asperiores fugiat enim tempore veniam consequuntur quisquam.</p>
+                    <div class="btn-primary">
+                        <a href=""><button class="btn">Buy Now</button></a> 
+                     </div>
+            </div>
+        </div>
+
+    </body>
+</html>
